@@ -1,0 +1,19 @@
+/* media query */
+
+@media(max-width: 990px){
+    #bemvindo{
+        display: block;
+    }
+}
+
+@media(max-width: 607px){
+    main #form #form-formulario{
+        background-image: none;
+    }
+}
+
+@media(max-width: 523px){
+    main #beneficios #beneficios-servicos{
+        display: block;
+    }
+}

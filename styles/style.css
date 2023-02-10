@@ -1,0 +1,173 @@
+:root{
+    --cor-principal:#EA1C81;
+    --cor-topo:#D8F1FB;
+    --cor-preta:black;
+    --cor-branca:white;
+    --cor-fundo:#FAFBFF;
+}
+*{
+    /* tirar a margem */
+    margin: 0px;
+    /* tirar espaçamento interno */
+    padding: 0px;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+#header{
+    /* cor de fundo */
+    background-color:var(--cor-topo);
+
+    /* deixa os itens em blocos flexiveis */
+    display: flex;
+
+    /* um item em cada ponta */
+    justify-content: space-between;
+
+    /* espaçameto interno- tamanho do header */
+    padding: 20px;
+
+    /* alinhar os itens */
+    align-items: center;
+}
+#header nav a{
+    /* deixar tudo sem bordas */
+text-decoration: none;
+
+color: var(--cor-preta);
+}
+
+#header nav a:hover{
+    background-color: var(--cor-principal);
+    /* espaçamento interno da bordaquando passar o mouse */
+    padding: 15px;
+
+    /* para deixar redondo */
+    border-radius: 20px;
+
+    /* mudar a cor do texto quando passar o mouse */
+    color: var(--cor-branca);
+}
+.marginLateral{
+
+    /* para dar espaço entre as coisas do header */
+    margin: 0px 20px;
+}
+main #banner{
+    /* imagem de fundo  */
+    background-image: url(../img/Banner.png);
+
+    /* tamanho da imagem  vh-100% */
+    height: calc(100vh - 116px);
+
+    /* quantas vezes a imagem vai se repetir */
+    background-repeat: no-repeat;
+
+/* para mudar a posição- nesse caso centro */
+    background-position: center center;
+
+    /* aparece em toda a tela */
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal);
+}
+
+.marginCimaBaixo{
+    margin: 20px 0px;
+}
+
+main #banner h1{
+    color: var(--cor-principal);
+    font-size: 2em;
+}
+
+/* estilizar o botão no banner */
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 20px;
+}
+main #banner button:hover{
+    cursor: pointer;
+}
+
+#header, main #banner button, #bemvindo div, #rodape, main #form #form-formulario form{
+    padding: 20px;
+}
+
+#bemvindo{
+    /* para dividir as colunas */
+    display: grid;
+    /* quantidade de colunas */
+    grid-template-columns: repeat(2,1fr);
+}
+
+#bemVindo #boasvindas h3{
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+    /* espaçamento entre as colunas */
+    gap: 20px;
+}
+
+main #beneficios{
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+main #beneficios #beneficios-nossosBeneficios, main #beneficios #beneficios-servicos, main #form #form-texto, #rodape{
+    text-align: center;
+
+}
+main #beneficios #beneficios-servicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 35px;
+}
+
+main #form #form-formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #form #form-formulario form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+main #form #form-formulario form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+}
+
+main #form #form-formulario{
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#rodape{
+    background-color: var(--cor-topo);
+}
+main #form.form-sem-cachorro #form-formulario{
+    background-image: none;
+}
+
+
+

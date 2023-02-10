@@ -167,7 +167,6 @@ main #form #form-formulario{
 }
 main #form.form-sem-cachorro #form-formulario{
     background-image: none;
+    gap: 20px;
 }
-
-
 
